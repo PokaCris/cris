@@ -1,14 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
-import TestComponent from
-import AnotherOneComponent from
-import CurrentDate from
-import CurrentTime from
+import TestComponent from './containers/newTestComponent';
+import AnotherOneComponent from './containers/AnotherOneComponent';
+import CurrentDate from './containers/currentDate';
+import CurrentTime from './containers/currentTime';
+import Form from './containers/Form';
 import Writers from
-import Form from
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import NavMenu from './components/NavMenu';
+
+
 
 function App(props) {
   const someFunc = (value) => {
@@ -25,10 +27,10 @@ function App(props) {
         <div>
         <NavMenu />
         <Routes>
-          <Route exact path="/" Component={AnotherOneComponent}></Route>
-          <Route exact path="/about" Component={Writers}></Route>
-          <Route exact path="/test" Component={TestComponent}></Route>
-          <Route component={CurrentTime} />
+          <Route exact path="/" Component={AnotherOneComponent} />
+          <Route exact path="/about/fg" Component={Writers} />
+          <Route exact path="/test/:id?" Component={TestComponent} />
+          {/* <Route component={CurrentTime} /> */}
         </Routes>
         {/*{<AnotherOneComponent/>}*/}
         </div>

@@ -9,7 +9,7 @@ const NavMenu = () => {
         <Link to="/about" className="links">
         About
         </Link>
-        <Link to="/news" className="links">
+        <Link to="/test/27&color=yellow6year=2018" className="links">
         News
         </Link>
         </>
